@@ -28,4 +28,11 @@
 
 9. 7까지 완료 후 새로운 파일을 만들거나, 파일을 수정 후 commit만 진행
     9-1 > git graph를 보면 master가 수정한 commit 을 가리킨다. 이것은 내 지역저장소(로컬저장소) 에만 존재하는 파일이라는 뜻이다.
-    9-2 > 
+          따라서 commit 상태인 항목들을 push 하여 원격 저장소에 넣어야한다.
+    9-2 > 메뉴버튼 (···) 누르고 push 버튼 클릭
+    9-3 > git log --oneline --all --graph 명령어를 커맨드창에 입력하면
+          * ed960d4 (HEAD -> master, origin/master) 설명서 추가
+          이런식의 텍스트 가 나온다.
+          HEAD -> master, origin/master 를 해석해보면 현재 헤드가 가리키는 곳이 지역저장소(master)와 origin/master(원격저장소) 가 같이 있는곳이다. 즉, 동기화가 완료되었다는 뜻이다.
+          
+
