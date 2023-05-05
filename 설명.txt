@@ -1,0 +1,31 @@
+1. source controll > initialize repository 선택 > 로컬 저장소(지역 저장소) 만드는 것.
+
+2. 작업 후 source controll > 작업내역 입력 후 commit
+★★★★★ 작업내역을 반드시 입력해야한다!!
+
+3. git hub 저장소(repository) 만들기
+
+4. 원격 저장소 어딘지 알려주기 위해 주소 복사하기(㉠)
+    4-1 > 통신방식(HTTPS or SSH) 선택
+    4-2 > 주소 복사 (사이트 주소가 아닌 저장소의 주소를 복사해야한다.)
+
+5. 지역저장소에 원격저장소 주소 등록하기
+    5-1 > VS Code 의 source controll 탭에서 점3개 메뉴버튼 (···) 클릭
+    5-2 > remote 클릭 후 add remote
+    5-3 > 상단 입력창에 원격저장소 복사한 주소(㉠) 을 입력 후 엔터
+    5-4 > 별명 지정 후 (보통 origin 이라고 해줌) 엔터
+
+6. 원격 저장소에 push 하기
+    6-1 > publish branch 클릭하거나, 점3개 메뉴버튼 (···) 누르고 push 버튼 클릭
+    6-2 > 인증하라고 나오면 인증하면되고, 다른 게 나오면 그냥 ok 누르면 됨
+
+7. 완료시 origin/master 생성됨. == 원격저장소에 정상 등록한 것.
+
+8. Branch 의 개념
+    8-1 > master(지역저장소의 master), origin/master(원격저장소의 master) 모두 브랜치이다.
+    8-2 > master 라는 것은 해당 저장소의 최신 버젼이 누군지 가르키는 것이라고 일단 알아두자.
+    8-3 > master(지역저장소의 master), origin/master(원격저장소의 master)가 같은 버전을 본다면 동기화가 완료되었다는 것.
+
+9. 7까지 완료 후 새로운 파일을 만들거나, 파일을 수정 후 commit만 진행
+    9-1 > git graph를 보면 master가 수정한 commit 을 가리킨다. 이것은 내 지역저장소(로컬저장소) 에만 존재하는 파일이라는 뜻이다.
+    9-2 > 
